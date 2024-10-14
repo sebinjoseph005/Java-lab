@@ -24,3 +24,14 @@ public class FileExp2
  FileReader fin = new FileReader("Register1.txt"); 
  BufferedReader br = new BufferedReader(fin); 
  String line;
+System.out.println("\nContent of Register1.txt is:");
+ while ((line = br.readLine()) != null) {
+ System.out.println(line);
+ }
+ br.close();
+ } 
+ 
+ catch (IOException e) 
+ {
+ System.out.println("Exception occured: " + 
+e.getMessage());
